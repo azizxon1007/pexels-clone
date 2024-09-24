@@ -81,20 +81,23 @@ input{
     .display_images{
         display: grid;
         grid-template-columns: auto;
-        margin: 0 70px;
+        margin: 0 40px;
     }
     input {
-        width: 250px;
+        width: 200px;
     }
 }
 @media (max-width: 475px) {
+    .container {
+        margin: 0 auto;
+    }
     input {
         width: 150px;
     }
     .display_images{
         display: grid;
         grid-template-columns: auto;
-        margin: 0 30px;
+        /* margin: 0 20px; */
     }
 }
 @media (max-width: 400px) {
@@ -103,5 +106,12 @@ input{
     }
     input {
         width: 100px;
+    }
+    .display_images .image {
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        cursor: pointer;
     }
 }
